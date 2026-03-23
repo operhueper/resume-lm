@@ -5,7 +5,8 @@ import Stripe from 'stripe'
 import { manageSubscriptionStatusChange } from '@/utils/actions/stripe/actions'
 import { createServiceClient } from '@/utils/supabase/server'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+const stripeKey = process.env.STRIPE_SECRET_KEY || 'sk_placeholder_not_configured';
+const stripe = new Stripe(stripeKey, {
   apiVersion: '2025-04-30.basil'
 })
 
