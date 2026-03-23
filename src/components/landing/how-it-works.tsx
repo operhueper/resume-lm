@@ -47,10 +47,10 @@ export function HowItWorks() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 bg-clip-text text-transparent">
-            How ResumeLM Works
+            Как работает ResumeLM
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Create tailored resumes in minutes with AI-powered optimization
+            Создавайте адаптированные резюме за считанные минуты с оптимизацией на базе ИИ
           </p>
         </div>
 
@@ -61,8 +61,8 @@ export function HowItWorks() {
             <div className="flex flex-col items-center">
               <FlowCard
                 type="profile"
-                title="Your Profile"
-                description="Store all your professional experience, skills, and achievements in one place"
+                title="Ваш профиль"
+                description="Храните весь профессиональный опыт, навыки и достижения в одном месте"
                 className="w-64"
               />
             </div>
@@ -81,14 +81,14 @@ export function HowItWorks() {
             <div className="flex flex-col items-center gap-4">
               <FlowCard
                 type="base"
-                title="Software Engineer"
-                description="Curate relevant experience for software roles"
+                title="Инженер-программист"
+                description="Подберите релевантный опыт для IT-позиций"
                 className="w-48"
               />
               <FlowCard
                 type="base"
-                title="Product Manager"
-                description="Highlight leadership and product skills"
+                title="Продуктовый менеджер"
+                description="Выделите навыки лидерства и управления продуктом"
                 className="w-48"
               />
             </div>
@@ -111,26 +111,26 @@ export function HowItWorks() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-24">
               <FlowCard
                 type="tailored"
-                title="Frontend Dev at Google"
-                description="Tailored for Google's frontend position"
+                title="Frontend-разработчик в Google"
+                description="Адаптировано под позицию frontend в Google"
                 className="w-48"
               />
               <FlowCard
                 type="tailored"
-                title="Full Stack at Meta"
-                description="Customized for Meta's requirements"
+                title="Full Stack в Meta"
+                description="Настроено под требования Meta"
                 className="w-48"
               />
               <FlowCard
                 type="tailored"
-                title="PM at Amazon"
-                description="Aligned with Amazon's leadership principles"
+                title="PM в Amazon"
+                description="Согласовано с принципами лидерства Amazon"
                 className="w-48"
               />
               <FlowCard
                 type="tailored"
-                title="PM at Microsoft"
-                description="Focused on Microsoft's PM expectations"
+                title="PM в Microsoft"
+                description="Ориентировано на ожидания Microsoft к PM"
                 className="w-48"
               />
             </div>

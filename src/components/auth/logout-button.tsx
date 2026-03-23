@@ -21,8 +21,8 @@ export function LogoutButton({ className }: LogoutButtonProps) {
       await logout();
     } catch {
       toast({
-        title: "Error signing out",
-        description: "Please try again",
+        title: "Ошибка выхода",
+        description: "Пожалуйста, попробуйте снова",
         variant: "destructive",
       });
     } finally {
@@ -43,7 +43,7 @@ export function LogoutButton({ className }: LogoutButtonProps) {
       disabled={isLoading}
     >
       <LogOut className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`} />
-      <span className="hidden sm:inline">{isLoading ? 'Signing out...' : 'Logout'}</span>
+      <span className="hidden sm:inline">{isLoading ? 'Выход...' : 'Выйти'}</span>
     </Button>
   );
 } 

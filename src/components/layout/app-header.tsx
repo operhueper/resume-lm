@@ -103,15 +103,15 @@ export function AppHeader({
                     apiKeys={apiKeys}
                     isProPlan={isProPlan}
                     className="w-[220px] lg:w-[260px] xl:w-[300px] h-8 text-xs"
-                    placeholder="Select AI model"
+                    placeholder="Выбрать модель ИИ"
                     showToast={false}
                   />
                 </div>
                 <div className="h-4 w-px bg-purple-200/50" />
-                
+
                 <div className="flex items-center px-2 lg:px-3 py-1">
-                  <Link 
-                    href="/profile" 
+                  <Link
+                    href="/profile"
                     onClick={handleProfileClick}
                     className={cn(
                       "flex items-center gap-1.5 px-2 lg:px-3 py-1",
@@ -120,7 +120,7 @@ export function AppHeader({
                     )}
                   >
                     <User className="h-4 w-4" />
-                    <span className="hidden lg:inline">Profile</span>
+                    <span className="hidden lg:inline">Профиль</span>
                   </Link>
                   <div className="mx-1 lg:mx-2 h-4 w-px bg-purple-200/50" />
                   <SettingsButton />
@@ -138,7 +138,7 @@ export function AppHeader({
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[280px] sm:w-[320px]">
                   <SheetHeader>
-                    <SheetTitle>Menu</SheetTitle>
+                    <SheetTitle>Меню</SheetTitle>
                   </SheetHeader>
                   <div className="flex flex-col gap-4 pt-6">
                     {showUpgradeButton &&
@@ -171,7 +171,7 @@ export function AppHeader({
                       )}
                     >
                       <User className="h-4 w-4" />
-                      Profile
+                      Профиль
                     </Link>
                     <div className="px-4">
                       <SettingsButton

@@ -57,10 +57,10 @@ export function VideoShowcase() {
         {/* Section header */}
         <div className="text-center mb-12 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-teal-600">
-            See ResumeLM in Action
+            Посмотрите ResumeLM в действии
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Watch how our AI-powered platform transforms your resume in minutes
+            Узнайте, как наша ИИ-платформа преображает ваше резюме за несколько минут
           </p>
         </div>
         
@@ -94,7 +94,7 @@ export function VideoShowcase() {
                     togglePlay();
                   }}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-indigo-600 text-white transition-all duration-300 hover:scale-110 z-20"
-                  aria-label="Play video"
+                  aria-label="Воспроизвести видео"
                 >
                   <Play className="w-8 h-8 ml-1" />
                 </button>
@@ -103,7 +103,7 @@ export function VideoShowcase() {
               {/* Controls overlay - bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
                 <div className="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full border border-indigo-200">
-                  ResumeLM Demo
+                  Демо ResumeLM
                 </div>
                 <button
                   onClick={(e) => {
@@ -111,7 +111,7 @@ export function VideoShowcase() {
                     toggleFullscreen();
                   }}
                   className="text-white bg-black/20 p-2 rounded-full border border-white/10 transition-all duration-300 hover:bg-black/30"
-                  aria-label="Toggle fullscreen"
+                  aria-label="Переключить полноэкранный режим"
                 >
                   <Maximize2 className="w-4 h-4" />
                 </button>
@@ -122,13 +122,13 @@ export function VideoShowcase() {
           {/* Feature badges below video */}
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             <span className="px-3 py-1 rounded-full bg-indigo-50 text-sm border border-indigo-200 text-indigo-700">
-              Interactive Demo
+              Интерактивное демо
             </span>
             <span className="px-3 py-1 rounded-full bg-indigo-50 text-sm border border-indigo-200 text-indigo-700">
-              User-friendly Interface
+              Удобный интерфейс
             </span>
             <span className="px-3 py-1 rounded-full bg-indigo-50 text-sm border border-indigo-200 text-indigo-700">
-              Real-time AI Assistance
+              ИИ-помощь в реальном времени
             </span>
           </div>
         </div>

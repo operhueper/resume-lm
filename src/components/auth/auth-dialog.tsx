@@ -39,7 +39,7 @@ export function AuthDialog({ children, defaultTab = "signup" }: AuthDialogProps)
       >
         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <span className="relative z-10 flex items-center justify-center">
-          Start Now
+          Начать сейчас
           <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </span>
       </Button>

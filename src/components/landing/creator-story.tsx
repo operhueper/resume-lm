@@ -23,10 +23,10 @@ export function CreatorStory() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-sm text-indigo-700 inline-block mb-4"
           >
-            The Story Behind ResumeLM
+            История создания ResumeLM
           </motion.span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-violet-600">
-            Meet the Creator
+            Познакомьтесь с создателем
           </h2>
         </motion.div>
         
@@ -46,7 +46,7 @@ export function CreatorStory() {
             <div className="relative aspect-square w-64 md:w-96 rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-md transform transition-all duration-300 hover:-translate-y-2">
               <Image
                 src="/alex.webp"
-                alt="Alex, creator of ResumeLM"
+                alt="Алекс, создатель ResumeLM"
                 fill
                 sizes="(max-width: 768px) 256px, 384px"
                 className="object-cover"
@@ -64,18 +64,18 @@ export function CreatorStory() {
           >
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl text-violet-800">
-                Why I Built ResumeLM
+                Почему я создал ResumeLM
               </h2>
-              
+
               <div className="space-y-4 text-lg text-slate-800 leading-relaxed">
                 <p>
-                  Hi, I&apos;m Alex! I&apos;m a Computer Science student at the University of British Columbia in Vancouver, 
-                  and like many students, I&apos;ve been through the challenging journey of searching for tech internships.
+                  Привет, я Алекс! Я студент факультета компьютерных наук в Университете Британской Колумбии в Ванкувере,
+                  и, как многие студенты, я прошёл через непростой путь поиска IT-стажировок.
                 </p>
-                
+
                 <p>
-                  ResumeLM is my passion project - a free, open-source resume builder designed to help students and developers 
-                  create ATS-optimized resumes without the hefty subscription costs. Because everyone deserves access to great tools.
+                  ResumeLM — мой проект по призванию: бесплатный конструктор резюме с открытым исходным кодом, созданный чтобы помочь студентам и разработчикам
+                  создавать ATS-оптимизированные резюме без дорогостоящих подписок. Потому что каждый заслуживает доступа к отличным инструментам.
                 </p>
 
                 <div className="flex gap-6 pt-4">

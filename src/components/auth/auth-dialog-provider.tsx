@@ -52,7 +52,7 @@ function SocialAuth() {
       const result = await signInWithGithub();
 
       if (!result.success) {
-        const message = result.error || "Failed to sign in with GitHub.";
+        const message = result.error || "Не удалось войти через GitHub.";
         setErrorMessage(message);
         return;
       }
@@ -62,10 +62,10 @@ function SocialAuth() {
         return;
       }
 
-      setErrorMessage("Failed to start GitHub sign in.");
+      setErrorMessage("Не удалось начать вход через GitHub.");
     } catch (error) {
       console.error("Failed to sign in with GitHub:", error);
-      setErrorMessage("Failed to start GitHub sign in.");
+      setErrorMessage("Не удалось начать вход через GitHub.");
     } finally {
       setIsLoading(false);
     }
@@ -78,7 +78,7 @@ function SocialAuth() {
           <Separator className="bg-slate-200" />
         </div>
         <div className="relative flex justify-center text-xs">
-          <span className="bg-white px-3 text-slate-500">or</span>
+          <span className="bg-white px-3 text-slate-500">или</span>
         </div>
       </div>
 
@@ -96,12 +96,12 @@ function SocialAuth() {
         {isLoading ? (
           <>
             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Connecting...
+            Подключение...
           </>
         ) : (
           <>
             <Github className="mr-2 h-4 w-4" />
-            Continue with GitHub
+            Войти через GitHub
           </>
         )}
       </Button>
@@ -148,7 +148,7 @@ export function AuthDialogProvider({ children }: { children: React.ReactNode }) 
   );
 
   const handleSignupSuccess = useCallback(() => {
-    toast.success("Account created. Check your email to confirm your account.");
+    toast.success("Аккаунт создан. Проверьте почту для подтверждения.");
     closeDialog();
   }, [closeDialog]);
 
@@ -171,8 +171,8 @@ export function AuthDialogProvider({ children }: { children: React.ReactNode }) 
             rounded-xl overflow-hidden overflow-y-auto
           "
         >
-          <DialogTitle className="sr-only">Authentication</DialogTitle>
-          <DialogDescription className="sr-only">Sign in or create an account</DialogDescription>
+          <DialogTitle className="sr-only">Аутентификация</DialogTitle>
+          <DialogDescription className="sr-only">Войдите или создайте аккаунт</DialogDescription>
 
           <div className="px-6 pt-6">
             <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as AuthTab)} className="w-full">
@@ -182,15 +182,15 @@ export function AuthDialogProvider({ children }: { children: React.ReactNode }) 
                   flex gap-0.5 rounded-lg
                 "
               >
-                <TabButton value="login">Sign In</TabButton>
-                <TabButton value="signup">Create Account</TabButton>
+                <TabButton value="login">Войти</TabButton>
+                <TabButton value="signup">Регистрация</TabButton>
               </TabsList>
 
               <div className="mt-5 pb-6">
                 <TabsContent value="login" className="mt-0 space-y-4">
                   <div className="text-center mb-4">
-                    <h3 className="text-lg font-semibold text-slate-900">Welcome back</h3>
-                    <p className="text-sm text-slate-600 mt-1">Sign in to continue</p>
+                    <h3 className="text-lg font-semibold text-slate-900">С возвращением</h3>
+                    <p className="text-sm text-slate-600 mt-1">Войдите, чтобы продолжить</p>
                   </div>
                   <LoginForm key={`login-${formVersion}`} />
                   <SocialAuth />
@@ -198,8 +198,8 @@ export function AuthDialogProvider({ children }: { children: React.ReactNode }) 
 
                 <TabsContent value="signup" className="mt-0 space-y-4">
                   <div className="text-center mb-4">
-                    <h3 className="text-lg font-semibold text-slate-900">Get started</h3>
-                    <p className="text-sm text-slate-600 mt-1">Create your free account</p>
+                    <h3 className="text-lg font-semibold text-slate-900">Начало работы</h3>
+                    <p className="text-sm text-slate-600 mt-1">Создайте бесплатный аккаунт</p>
                   </div>
                   <SignupForm key={`signup-${formVersion}`} onSuccess={handleSignupSuccess} />
                   <SocialAuth />

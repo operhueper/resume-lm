@@ -3,9 +3,9 @@
 import { CheckCircle2 } from "lucide-react";
 
 const BENEFITS = [
-  "Free and Open Source",
-  "Comp Sci / Engineering Focused",
-  "Customizable Models and System Prompts"
+  "Бесплатно и с открытым исходным кодом",
+  "Ориентировано на IT и инженерные специальности",
+  "Настраиваемые модели и системные промпты"
 ] as const;
 
 export function BenefitsList() {

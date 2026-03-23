@@ -51,9 +51,9 @@ export function withBasePath(path: string): string {
 
 export function getGreeting() {
   const hour = new Date().getHours();
-  if (hour < 12) return "Good morning";
-  if (hour < 17) return "Good afternoon";
-  return "Good evening";
+  if (hour < 12) return "Доброе утро";
+  if (hour < 17) return "Добрый день";
+  return "Добрый вечер";
 }
 
 export function sanitizeUnknownStrings<T>(data: T): T {

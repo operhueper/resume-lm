@@ -22,10 +22,10 @@ const FeatureHighlights = () => {
 
   // Statistics counters
   const stats = [
-    { value: "500+", label: "Resumes Created" },
-    { value: "89%", label: "Interview Rate" },
-    { value: "4.9/5", label: "User Rating" },
-    { value: "15 min", label: "Average Setup Time" },
+    { value: "500+", label: "Созданных резюме" },
+    { value: "89%", label: "Процент интервью" },
+    { value: "4.9/5", label: "Рейтинг пользователей" },
+    { value: "15 мин", label: "Среднее время настройки" },
   ];
 
   // Animation variants for scroll reveal
@@ -73,13 +73,13 @@ const FeatureHighlights = () => {
           className="flex justify-center gap-3 mb-4"
         >
           <span className="px-3 py-1 rounded-full bg-gradient-to-r from-purple-600/10 to-indigo-600/10 border border-purple-200/40 text-sm text-purple-700">
-            AI-Powered
+            На базе ИИ
           </span>
           <span className="px-3 py-1 rounded-full bg-gradient-to-r from-teal-600/10 to-cyan-600/10 border border-teal-200/40 text-sm text-teal-700">
-            ATS-Optimized
+            ATS-оптимизация
           </span>
           <span className="px-3 py-1 rounded-full bg-gradient-to-r from-emerald-600/10 to-green-600/10 border border-emerald-200/40 text-sm text-emerald-700">
-            100% Free
+            100% бесплатно
           </span>
         </motion.div>
         
@@ -92,16 +92,16 @@ const FeatureHighlights = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
             <span className="inline-block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              The Resume Builder
+              Конструктор резюме,
             </span>
             <br />
-            <motion.span 
+            <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="inline-block mt-1 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent"
             >
-              That Gets You Hired
+              который помогает трудоустроиться
             </motion.span>
           </h2>
           
@@ -111,7 +111,7 @@ const FeatureHighlights = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mt-3"
           >
-            Smart AI tools that optimize your resume for each job, increasing your interview chances by up to <span className="font-semibold text-teal-700">3x</span>
+            Умные ИИ-инструменты, которые оптимизируют ваше резюме для каждой вакансии, увеличивая шансы на интервью до <span className="font-semibold text-teal-700">3 раз</span>
           </motion.p>
         </motion.div>
 
@@ -177,59 +177,59 @@ const FeatureHighlights = () => {
             
             <SplitContent
               imageSrc="/SS Chat.png"
-              heading="AI-Powered Resume Assistant"
-              description="Get real-time feedback and suggestions from our advanced AI assistant. Optimize your resume content, improve your bullet points, and ensure your skills stand out to recruiters and ATS systems."
+              heading="ИИ-ассистент по резюме"
+              description="Получайте обратную связь и предложения в режиме реального времени от нашего продвинутого ИИ-ассистента. Оптимизируйте содержание резюме, улучшайте пункты описания опыта и выделяйте ваши навыки для рекрутеров и ATS-систем."
               imageOnLeft={false}
               imageOverflowRight={true}
-              badgeText="90% more effective bullets"
+              badgeText="На 90% эффективнее"
               badgeGradient="from-purple-600/10 to-indigo-600/10"
               bulletPoints={[
-                "Smart content suggestions based on your experience",
-                "Real-time feedback on your resume",
-                "Industry-specific optimization"
+                "Умные предложения по содержанию на основе вашего опыта",
+                "Обратная связь по резюме в реальном времени",
+                "Оптимизация под конкретную отрасль"
               ]}
             />
 
             <SplitContent
               imageSrc="/Dashboard Image.png"
-              heading="Beautiful Resume Dashboard"
-              description="Manage all your resumes in one place with our intuitive dashboard. Create base resumes, generate tailored versions for specific jobs, and track your application progress with ease."
+              heading="Удобная панель управления резюме"
+              description="Управляйте всеми резюме в одном месте с помощью нашей интуитивной панели. Создавайте базовые резюме, генерируйте адаптированные версии под конкретные вакансии и отслеживайте прогресс заявок."
               imageOnLeft={true}
-              badgeText="Organize your job search"
+              badgeText="Организуйте поиск работы"
               badgeGradient="from-teal-600/10 to-cyan-600/10"
               bulletPoints={[
-                "Centralized resume management",
-                "Version control for all your resumes",
-                "Track application status"
+                "Централизованное управление резюме",
+                "Контроль версий всех резюме",
+                "Отслеживание статуса заявок"
               ]}
             />
 
             <SplitContent
               imageSrc="/SS Score.png"
-              heading="Resume Performance Scoring"
-              description="Get detailed insights into your resume's effectiveness with our comprehensive scoring system. Track key metrics, identify areas for improvement, and optimize your resume to stand out to employers and ATS systems."
+              heading="Оценка эффективности резюме"
+              description="Получайте подробную аналитику по эффективности вашего резюме с помощью нашей комплексной системы оценки. Отслеживайте ключевые метрики, выявляйте зоны роста и оптимизируйте резюме для работодателей и ATS-систем."
               imageOnLeft={false}
               imageOverflowRight={true}
-              badgeText="3x higher response rates"
+              badgeText="В 3 раза больше откликов"
               badgeGradient="from-pink-600/10 to-rose-600/10"
               bulletPoints={[
-                "ATS compatibility scoring",
-                "Keyword optimization insights",
-                "Detailed improvement recommendations"
+                "Оценка совместимости с ATS",
+                "Анализ оптимизации ключевых слов",
+                "Подробные рекомендации по улучшению"
               ]}
             />
 
             <SplitContent
               imageSrc="/SS Cover Letter.png"
-              heading="AI Cover Letter Generator"
-              description="Create compelling, personalized cover letters in minutes with our AI-powered generator. Tailor your message to specific job opportunities while maintaining a professional and engaging tone that captures attention."
+              heading="ИИ-генератор сопроводительных писем"
+              description="Создавайте убедительные персонализированные сопроводительные письма за считанные минуты с помощью нашего ИИ-генератора. Адаптируйте сообщение под конкретные вакансии, сохраняя профессиональный и привлекательный тон."
               imageOnLeft={true}
-              badgeText="Save 30+ minutes per application"
+              badgeText="Экономьте 30+ минут на заявку"
               badgeGradient="from-emerald-600/10 to-green-600/10"
               bulletPoints={[
-                "Tailored to match job requirements",
-                "Professional tone and structure",
-                "Highlights your relevant achievements"
+                "Адаптировано под требования вакансии",
+                "Профессиональный тон и структура",
+                "Выделяет ваши ключевые достижения"
               ]}
             />
       </div>
@@ -242,7 +242,7 @@ const FeatureHighlights = () => {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="text-xl text-muted-foreground mb-8">Trusted by professionals from companies like</h3>
+        <h3 className="text-xl text-muted-foreground mb-8">Нам доверяют специалисты из таких компаний, как</h3>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto opacity-80">
           {companies.map((company, index) => (
             <div key={index} className="w-24 h-12 relative transition-all duration-300">
@@ -269,36 +269,36 @@ const FeatureHighlights = () => {
         <div className="max-w-3xl mx-auto px-6 py-12 rounded-2xl bg-gradient-to-br from-white/50 to-white/30 backdrop-blur-lg border border-white/40 shadow-xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              Ready to land your dream job?
+              Готовы получить работу мечты?
             </span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Join 50,000+ professionals who are getting more interviews with ResumeLM
+            Присоединяйтесь к 50 000+ специалистам, которые получают больше приглашений на интервью с ResumeLM
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <AuthDialog>
-              <button 
+              <button
                 className="px-8 py-4 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-lg font-medium shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                Create Your Free Resume
+                Создать бесплатное резюме
               </button>
             </AuthDialog>
-            <Link 
-              href="https://github.com/olyaiy/resume-lm" 
+            <Link
+              href="https://github.com/olyaiy/resume-lm"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-lg bg-white/80 border border-purple-200/40 text-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                Open Source on Github
+                Открытый исходный код на GitHub
               </span>
             </Link>
           </div>
-          
+
           <p className="text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
             <CheckCircle2 className="w-4 h-4 text-green-500" />
-            No credit card required • 100% free
+            Без банковской карты • 100% бесплатно
           </p>
         </div>
       </motion.div>
@@ -306,10 +306,10 @@ const FeatureHighlights = () => {
       {/* Sticky mobile CTA - only visible on mobile/tablet */}
       <div className="md:hidden fixed bottom-4 left-0 right-0 z-50 px-4">
         <AuthDialog>
-          <button 
+          <button
             className="flex items-center justify-center w-full py-3.5 rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium shadow-lg"
           >
-            Get Started Now
+            Начать сейчас
           </button>
         </AuthDialog>
       </div>

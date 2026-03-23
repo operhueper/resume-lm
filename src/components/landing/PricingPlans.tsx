@@ -31,33 +31,33 @@ export function PricingPlans() {
   // Define pricing plans data for easier maintenance
   const plans = useMemo<PricingPlan[]>(() => [
     {
-      name: "Free",
+      name: "Бесплатно",
       price: "$0",
-      description: "Self-host or use with your own API keys",
+      description: "Самостоятельный хостинг или использование со своими API-ключами",
       features: [
-        { text: "Use your own API keys" },
-        { text: "2 base resumes" },
-        { text: "5 tailored resumes" },
-        { text: "Self-host option available" },
+        { text: "Используйте свои API-ключи" },
+        { text: "2 базовых резюме" },
+        { text: "5 адаптированных резюме" },
+        { text: "Доступен вариант самостоятельного размещения" },
       ],
-      ctaText: "Get Started",
+      ctaText: "Начать",
       ctaLink: "/auth/register",
       ctaSecondary: true,
     },
     {
       name: "Pro",
       price: "$20",
-      period: "/month",
-      description: "Enhanced features for serious job seekers",
-      badge: "Most Popular",
+      period: " в месяц",
+      description: "Расширенные возможности для серьёзных соискателей",
+      badge: "Самый популярный",
       popular: true,
       features: [
-        { text: "Access to all premium AI models", highlight: true },
-        { text: "Unlimited base resumes", highlight: true },
-        { text: "Unlimited tailored resumes", highlight: true },
-        { text: "Support an independent student developer ❤️" },
+        { text: "Доступ ко всем премиальным ИИ-моделям", highlight: true },
+        { text: "Неограниченно базовых резюме", highlight: true },
+        { text: "Неограниченно адаптированных резюме", highlight: true },
+        { text: "Поддержите независимого студента-разработчика ❤️" },
       ],
-      ctaText: "Get Started",
+      ctaText: "Начать",
       ctaLink: "/auth/register",
     }
   ], []);
@@ -108,7 +108,7 @@ export function PricingPlans() {
           className="flex justify-center gap-3 mb-4"
         >
           <span className="px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-sm text-teal-700">
-            Simple Pricing
+            Простые цены
           </span>
         </motion.div>
         
@@ -119,16 +119,16 @@ export function PricingPlans() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-4xl md:text-5xl font-bold tracking-tight text-indigo-600"
         >
-          Choose Your Plan
+          Выберите план
         </motion.h2>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto"
         >
-          Select the perfect plan for your needs with transparent pricing and no hidden fees
+          Подберите оптимальный план с прозрачными ценами и без скрытых платежей
         </motion.p>
       </div>
       

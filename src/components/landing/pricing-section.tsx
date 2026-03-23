@@ -20,31 +20,31 @@ interface PricingTier {
 
 const tiers: PricingTier[] = [
   {
-    name: "Free",
+    name: "Бесплатно",
     price: "$0",
-    description: "Self-host or use with your own API keys",
+    description: "Самостоятельный хостинг или использование со своими API-ключами",
     gradient: "from-violet-600/80 to-indigo-600/80",
     features: [
-      { text: "Use your own API keys", included: true },
-      { text: "2 base resumes", included: true },
-      { text: "5 tailored resumes", included: true },
-      { text: "Self-host option available", included: true },
+      { text: "Используйте свои API-ключи", included: true },
+      { text: "2 базовых резюме", included: true },
+      { text: "5 адаптированных резюме", included: true },
+      { text: "Доступен вариант самостоятельного размещения", included: true },
     ],
-    buttonText: "Get Started",
+    buttonText: "Начать",
   },
   {
     name: "Pro",
     price: "$20",
-    description: "Enhanced features for serious job seekers",
+    description: "Расширенные возможности для серьёзных соискателей",
     gradient: "from-pink-600/80 to-rose-600/80",
     popular: true,
     features: [
-      { text: "Access to all premium AI models", included: true },
-      { text: "Unlimited base resumes", included: true },
-      { text: "Unlimited tailored resumes", included: true },
-      { text: "Support an independent student developer ❤️", included: true },
+      { text: "Доступ ко всем премиальным ИИ-моделям", included: true },
+      { text: "Неограниченно базовых резюме", included: true },
+      { text: "Неограниченно адаптированных резюме", included: true },
+      { text: "Поддержите независимого студента-разработчика ❤️", included: true },
     ],
-    buttonText: "Get Started",
+    buttonText: "Начать",
   },
 ];
 
@@ -61,16 +61,16 @@ export function PricingSection() {
         {/* Section Header */}
         <div className="text-center mb-24">
           <h2 className="text-4xl font-bold tracking-tight sm:text-5xl bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 bg-clip-text text-transparent pb-3">
-            Pricing
+            Цены
           </h2>
           <div className="flex flex-col items-center gap-3 mb-12">
             <div className="flex flex-col items-center px-6 py-2.5 rounded-full bg-gradient-to-r from-violet-600/10 to-blue-600/10 border border-violet-600/20 shadow-lg shadow-violet-600/5">
               <span className="text-sm font-medium bg-gradient-to-r from-violet-600 to-blue-600 bg-clip-text text-transparent">
-                ⭐️ Free to use with your own API keys
+                ⭐️ Бесплатно со своими API-ключами
               </span>
             </div>
             <p className="text-sm text-muted-foreground hover:text-violet-600 transition-colors duration-300">
-              ResumeLM is open source and free to use. Pro version with managed API keys coming soon!
+              ResumeLM — открытый исходный код, бесплатен в использовании. Версия Pro с управляемыми API-ключами скоро появится!
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export function PricingSection() {
             >
               {tier.popular && (
                 <div className="absolute -top-6 left-0 right-0 mx-auto w-36 rounded-full bg-gradient-to-r from-pink-600 to-rose-600 px-4 py-1.5 text-sm text-white text-center font-medium shadow-lg">
-                  Coming Soon
+                  Скоро
                 </div>
               )}
 
@@ -109,7 +109,7 @@ export function PricingSection() {
                       {tier.price}
                     </span>
                     {tier.price !== "$0" && (
-                      <span className="ml-2 text-muted-foreground">/month</span>
+                      <span className="ml-2 text-muted-foreground">в месяц</span>
                     )}
                   </div>
                   <p className="mt-3 text-muted-foreground">{tier.description}</p>

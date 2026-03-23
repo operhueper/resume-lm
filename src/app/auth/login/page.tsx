@@ -123,7 +123,7 @@ export default async function LoginPage({
                       />
                     </svg>
                     <span className="text-sm font-semibold bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 bg-clip-text text-transparent">
-                      Open Source on GitHub
+                      Открытый код на GitHub
                     </span>
                     <svg
                       className="w-4 h-4 text-violet-500 transition-all duration-300 transform group-hover:translate-x-1 group-hover:text-violet-600"
@@ -143,19 +143,19 @@ export default async function LoginPage({
                   <div className="space-y-5">
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
                       <span className="inline-block bg-gradient-to-r from-violet-600 via-blue-600 to-violet-600 bg-clip-text text-transparent animate-gradient-x pb-2">
-                        Free AI Resume Builder
+                        Бесплатный ИИ-конструктор резюме
                       </span>
                       <br />
                       <span className="relative inline-block">
                         <span className="inline-block bg-gradient-to-r from-violet-500/90 via-blue-500/90 to-violet-500/90 bg-clip-text text-transparent animate-gradient-x">
-                          that lands you tech jobs
+                          который помогает найти работу в IT
                         </span>
                         <div className="absolute -bottom-2 left-0 w-24 sm:w-32 h-1.5 bg-gradient-to-r from-violet-500 to-blue-500 rounded-full" />
                       </span>
                     </h1>
                     
                     <p className="text-xl sm:text-2xl text-muted-foreground/90 leading-relaxed max-w-2xl font-medium">
-                      Create tailored, ATS-optimized resumes powered by AI.
+                      Создавайте персонализированные ATS-оптимизированные резюме с помощью ИИ.
                     </p>
                   </div>
 
@@ -243,31 +243,31 @@ export default async function LoginPage({
             
             <SplitContent
               imageSrc="/SS Chat.png"
-              heading="AI-Powered Resume Assistant"
-              description="Get real-time feedback and suggestions from our advanced AI assistant. Optimize your resume content, improve your bullet points, and ensure your skills stand out to recruiters and ATS systems."
+              heading="ИИ-ассистент для резюме"
+              description="Получайте обратную связь в реальном времени от нашего ИИ-ассистента. Оптимизируйте содержание резюме, улучшайте описание достижений и выделяйтесь среди других кандидатов."
               imageOnLeft={false}
               imageOverflowRight={true}
             />
 
             <SplitContent
               imageSrc="/Dashboard Image.png"
-              heading="Beautiful Resume Dashboard"
-              description="Manage all your resumes in one place with our intuitive dashboard. Create base resumes, generate tailored versions for specific jobs, and track your application progress with ease."
+              heading="Удобный дашборд резюме"
+              description="Управляйте всеми резюме в одном месте. Создавайте базовые резюме, генерируйте адаптированные версии для конкретных вакансий и отслеживайте прогресс."
               imageOnLeft={true}
             />
 
             <SplitContent
               imageSrc="/SS Score.png"
-              heading="Resume Performance Scoring"
-              description="Get detailed insights into your resume's effectiveness with our comprehensive scoring system. Track key metrics, identify areas for improvement, and optimize your resume to stand out to employers and ATS systems."
+              heading="Оценка эффективности резюме"
+              description="Получайте детальную аналитику эффективности вашего резюме. Отслеживайте ключевые метрики, выявляйте области для улучшения и оптимизируйте резюме для работодателей и ATS-систем."
               imageOnLeft={false}
               imageOverflowRight={true}
             />
 
             <SplitContent
               imageSrc="/SS Cover Letter.png"
-              heading="AI Cover Letter Generator"
-              description="Create compelling, personalized cover letters in minutes with our AI-powered generator. Tailor your message to specific job opportunities while maintaining a professional and engaging tone that captures attention."
+              heading="ИИ-генератор сопроводительных писем"
+              description="Создавайте убедительные персонализированные сопроводительные письма за минуты. Адаптируйте сообщение под конкретные вакансии, сохраняя профессиональный тон."
               imageOnLeft={true}
             />
           </div>

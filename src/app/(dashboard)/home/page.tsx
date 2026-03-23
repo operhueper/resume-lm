@@ -117,12 +117,12 @@ export default async function Home({
         <Card className="max-w-md w-full p-8 bg-white/80 backdrop-blur-xl border-white/40 shadow-2xl">
           <div className="text-center space-y-4">
             <User className="w-12 h-12 text-muted-foreground mx-auto" />
-            <h2 className="text-2xl font-semibold text-gray-800">Profile Not Found</h2>
+            <h2 className="text-2xl font-semibold text-gray-800">Профиль не найден</h2>
             <p className="text-muted-foreground">
-              We couldn&apos;t find your profile information. Please contact support for assistance.
+              Не удалось найти ваш профиль. Обратитесь в поддержку.
             </p>
             <Button className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white">
-              Contact Support
+              Связаться с поддержкой
             </Button>
           </div>
         </Card>
@@ -163,7 +163,7 @@ export default async function Home({
                   {getGreeting()}, {profile.first_name}
                 </h1>
                 <p className="text-sm text-muted-foreground mt-0.5">
-                  Welcome to your resume dashboard
+                  Добро пожаловать в ваш дашборд резюме
                 </p>
               </div>
             </div>

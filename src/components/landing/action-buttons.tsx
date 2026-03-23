@@ -20,7 +20,7 @@ export function ActionButtons() {
         onClick={() => window.open('https://github.com/olyaiy/resume-ai', '_blank')}
       >
         <Github className="mr-2 w-3.5 h-3.5" />
-        Source Code on GitHub
+        Исходный код на GitHub
       </Button>
     </div>
   );

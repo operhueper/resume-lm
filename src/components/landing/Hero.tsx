@@ -27,14 +27,14 @@ export function Hero() {
         
         {/* Tagline with simplified gradient text */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-          <span className="block">Open source</span>
-          <span className="block text-indigo-600">AI Resume Builder</span>
-          <span className="block">that lands you tech jobs</span>
+          <span className="block">Открытый исходный код</span>
+          <span className="block text-indigo-600">ИИ-конструктор резюме</span>
+          <span className="block">который помогает найти работу в IT</span>
         </h1>
         
         {/* Description with quantifiable benefits */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-md">
-          Create ATS-optimized tech resumes in under 10 minutes. 3x your interview chances with AI-powered resume tailoring.
+          Создавайте ATS-оптимизированные резюме за 10 минут. Утроьте шансы получить интервью с помощью ИИ-адаптации резюме.
         </p>
         
         {/* CTAs with simplified effects */}
@@ -44,7 +44,7 @@ export function Hero() {
               className="px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium transition-all duration-300 hover:-translate-y-1 flex items-center justify-center"
               aria-label="Create your resume now"
             >
-              <span>Create Resume</span>
+              <span>Создать резюме</span>
               <svg className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -57,16 +57,16 @@ export function Hero() {
             className="px-6 py-3 rounded-lg bg-white/40 border border-gray-200 font-medium transition-all duration-300 hover:-translate-y-1"
             aria-label="View source code on GitHub"
           >
-            Open Source on Github
+            Открытый код на Github
           </Link>
         </div>
         
         {/* Feature badges with simplified styling */}
         <div className="flex flex-wrap gap-3 mt-6">
-          <span className="px-3 py-1 rounded-full bg-indigo-50 text-sm border border-indigo-200 text-indigo-700">AI-Powered</span>
-          <span className="px-3 py-1 rounded-full bg-teal-50 text-sm border border-teal-200 text-teal-700">ATS-Optimized</span>
-          <span className="px-3 py-1 rounded-full bg-emerald-50 text-sm border border-emerald-200 text-emerald-700">100% Free</span>
-          <span className="px-3 py-1 rounded-full bg-blue-50 text-sm border border-blue-200 text-blue-700">Privacy-First</span>
+          <span className="px-3 py-1 rounded-full bg-indigo-50 text-sm border border-indigo-200 text-indigo-700">На базе ИИ</span>
+          <span className="px-3 py-1 rounded-full bg-teal-50 text-sm border border-teal-200 text-teal-700">ATS-оптимизация</span>
+          <span className="px-3 py-1 rounded-full bg-emerald-50 text-sm border border-emerald-200 text-emerald-700">100% бесплатно</span>
+          <span className="px-3 py-1 rounded-full bg-blue-50 text-sm border border-blue-200 text-blue-700">Конфиденциальность</span>
         </div>
         
         {/* Simplified social proof section */}
@@ -81,10 +81,10 @@ export function Hero() {
             
             {/* Text content with testimonial */}
             <div className="flex-1">
-              <h3 className="font-semibold text-base">Join our growing community</h3>
-              <p className="text-sm text-muted-foreground">Trusted by over 500 tech professionals</p>
-              
-              <p className="text-xs italic mt-1 text-indigo-600">&ldquo;Landed 3 interviews in my first week using ResumeLM&rdquo; — Sarah K.</p>
+              <h3 className="font-semibold text-base">Присоединяйтесь к нашему сообществу</h3>
+              <p className="text-sm text-muted-foreground">Более 500 IT-специалистов уже используют ResumeLM</p>
+
+              <p className="text-xs italic mt-1 text-indigo-600">&ldquo;За первую неделю получила 3 приглашения на интервью&rdquo; — Сара К.</p>
               
               {/* Shadcn Avatar stack */}
               <div className="flex items-center mt-3">
@@ -105,7 +105,7 @@ export function Hero() {
                     <AvatarFallback className="bg-white text-xs text-indigo-600 font-medium">496+</AvatarFallback>
                   </Avatar>
                 </div>
-                <span className="text-xs text-muted-foreground">Active this month</span>
+                <span className="text-xs text-muted-foreground">Активны в этом месяце</span>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ export function Hero() {
           
           {/* AI optimization indicator */}
           <div className="absolute bottom-4 right-4 px-2 py-1 rounded-md bg-indigo-50 border border-indigo-200 text-[10px] text-indigo-700">
-            AI Optimized
+            ИИ-оптимизация
           </div>
         </div>
         
@@ -168,7 +168,7 @@ export function Hero() {
             <div className="h-[8px] w-[75%] bg-slate-200 rounded-sm"></div>
           </div>
           <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-pink-50 border border-pink-200 text-[8px] text-pink-700">
-            Tailored
+            Адаптировано
           </div>
         </div>
         
@@ -185,7 +185,7 @@ export function Hero() {
             <div className="h-[8px] w-[75%] bg-slate-200 rounded-sm"></div>
           </div>
           <div className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-teal-50 border border-teal-200 text-[8px] text-teal-700">
-            Technical
+            Техническое
           </div>
         </div>
       </div>

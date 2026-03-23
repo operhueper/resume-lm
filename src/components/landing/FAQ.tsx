@@ -18,36 +18,36 @@ export function FAQ() {
   // FAQ data - focused on ResumeLM specific questions
   const faqItems: FAQItem[] = [
     {
-      question: "How does ResumeLM's AI tailor my resume for specific jobs?",
-      answer: "Our AI analyzes job descriptions and automatically adjusts your resume content, keywords, and formatting to match what recruiters and ATS systems are looking for. It optimizes your bullet points, highlights relevant skills, and ensures your experience aligns with the job requirements."
+      question: "Как ИИ ResumeLM адаптирует моё резюме под конкретные вакансии?",
+      answer: "Наш ИИ анализирует описания вакансий и автоматически корректирует содержание, ключевые слова и форматирование вашего резюме под требования рекрутеров и ATS-систем. Он оптимизирует пункты описания опыта, выделяет релевантные навыки и обеспечивает соответствие вашего опыта требованиям вакансии."
     },
     {
-      question: "Is ResumeLM really free to use?",
-      answer: "Yes! Our free plan includes 2 base resumes and 5 tailored resumes using your own API keys. You can also self-host the entire platform. Our Pro plan ($20/month) provides unlimited resumes and access to premium AI models without needing your own API keys."
+      question: "ResumeLM действительно бесплатен?",
+      answer: "Да! Бесплатный план включает 2 базовых резюме и 5 адаптированных резюме с использованием ваших собственных API-ключей. Вы также можете самостоятельно разместить всю платформу. План Pro ($20 в месяц) предоставляет неограниченное количество резюме и доступ к премиальным ИИ-моделям без необходимости иметь собственные API-ключи."
     },
     {
-      question: "What makes ResumeLM different from other resume builders?",
-      answer: "ResumeLM is specifically designed for tech professionals with AI-powered optimization, ATS compatibility, and the ability to create multiple tailored versions from one base resume. Plus, it's open-source and can be self-hosted for complete control over your data."
+      question: "Чем ResumeLM отличается от других конструкторов резюме?",
+      answer: "ResumeLM специально разработан для IT-специалистов с оптимизацией на базе ИИ, совместимостью с ATS и возможностью создавать несколько адаптированных версий из одного базового резюме. Кроме того, это открытый исходный код с возможностью самостоятельного размещения для полного контроля над вашими данными."
     },
     {
-      question: "How long does it take to create a resume with ResumeLM?",
-      answer: "Most users create their first resume in under 15 minutes. Once you have a base resume, generating tailored versions for specific jobs takes just 2-3 minutes with our AI assistant."
+      question: "Сколько времени занимает создание резюме с ResumeLM?",
+      answer: "Большинство пользователей создают своё первое резюме менее чем за 15 минут. Когда базовое резюме готово, создание адаптированных версий под конкретные вакансии занимает всего 2–3 минуты с помощью нашего ИИ-ассистента."
     },
     {
-      question: "Will my resume pass ATS (Applicant Tracking Systems)?",
-      answer: "Absolutely! ResumeLM is specifically designed to create ATS-optimized resumes. Our templates use proper formatting, keyword optimization, and structure that ATS systems can easily parse and rank highly."
+      question: "Пройдёт ли моё резюме проверку ATS (системы отслеживания кандидатов)?",
+      answer: "Конечно! ResumeLM специально разработан для создания резюме, оптимизированных под ATS. Наши шаблоны используют правильное форматирование, оптимизацию ключевых слов и структуру, которую ATS-системы легко обрабатывают и высоко оценивают."
     },
     {
-      question: "Can I use my own AI API keys?",
-      answer: "Yes! With our free plan, you can use your own OpenAI, Anthropic, or other AI provider API keys. This gives you full control over costs and usage while still accessing all of ResumeLM's features."
+      question: "Могу ли я использовать собственные API-ключи ИИ?",
+      answer: "Да! Бесплатный план позволяет использовать ваши собственные API-ключи OpenAI, Anthropic или других провайдеров ИИ. Это даёт вам полный контроль над расходами и использованием при доступе ко всем функциям ResumeLM."
     },
     {
-      question: "Is my data secure and private?",
-      answer: "Your privacy is our priority. All data is encrypted, and you can even self-host ResumeLM for complete control. We never share your personal information or resume data with third parties."
+      question: "Насколько безопасны и конфиденциальны мои данные?",
+      answer: "Ваша конфиденциальность — наш приоритет. Все данные зашифрованы, и вы даже можете самостоятельно разместить ResumeLM для полного контроля. Мы никогда не передаём вашу личную информацию или данные резюме третьим лицам."
     },
     {
-      question: "Do you offer support for students or career changers?",
-      answer: "Absolutely! ResumeLM is perfect for students, career changers, and professionals at any level. Our AI helps highlight transferable skills and optimize your resume regardless of your experience level."
+      question: "Есть ли поддержка для студентов или тех, кто меняет профессию?",
+      answer: "Конечно! ResumeLM идеально подходит для студентов, людей, меняющих профессию, и специалистов любого уровня. Наш ИИ помогает выделить переносимые навыки и оптимизировать резюме независимо от вашего опыта."
     }
   ];
 
@@ -91,10 +91,10 @@ export function FAQ() {
         >
           <span className="px-3 py-1 rounded-full bg-gradient-to-r from-purple-600/10 to-indigo-600/10 border border-purple-200/40 text-sm text-purple-700 flex items-center gap-2">
             <HelpCircle className="w-4 h-4" />
-            FAQ
+            Частые вопросы
           </span>
         </motion.div>
-        
+
         {/* Compact heading */}
         <motion.h2
           id="faq-heading"
@@ -104,10 +104,10 @@ export function FAQ() {
           className="text-3xl md:text-4xl font-bold tracking-tight mb-3"
         >
           <span className="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-            Questions & Answers
+            Вопросы и ответы
           </span>
         </motion.h2>
-        
+
         {/* Shorter description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export function FAQ() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-base md:text-lg text-muted-foreground"
         >
-          Quick answers to help you get started with ResumeLM
+          Быстрые ответы, чтобы помочь вам начать работу с ResumeLM
         </motion.p>
       </div>
       

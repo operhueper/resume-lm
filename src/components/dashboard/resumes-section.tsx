@@ -108,18 +108,18 @@ export function ResumesSection({
     removeOptimisticResume(resumeId);
     
     // Show immediate feedback
-    toast.loading(`Deleting "${resumeName}"...`, { id: resumeId });
+    toast.loading(`Удаление "${resumeName}"...`, { id: resumeId });
     
     try {
       // Call server action in background
       await deleteResume(resumeId);
       
       // Success feedback
-      toast.success(`"${resumeName}" deleted successfully`, { id: resumeId });
+      toast.success(`"${resumeName}" успешно удалено`, { id: resumeId });
     } catch (error) {
       // On error, the optimistic update will automatically rollback
       console.error('Failed to delete resume:', error);
-      toast.error(`Failed to delete "${resumeName}". Please try again.`, { id: resumeId });
+      toast.error(`Не удалось удалить "${resumeName}". Попробуйте снова.`, { id: resumeId });
     } finally {
       // Remove from deleting set
       setDeletingResumes(prev => {
@@ -139,7 +139,7 @@ export function ResumesSection({
     const optimisticCopy: OptimisticResume = {
       ...sourceResume,
       id: `temp-${Date.now()}-${Math.random()}`, // Temporary unique ID
-      name: `${sourceResume.name} (Copy)`,
+      name: `${sourceResume.name} (Копия)`,
       isOptimistic: true,
       originalId: sourceResume.id,
       created_at: new Date().toISOString(),
@@ -150,18 +150,18 @@ export function ResumesSection({
     addOptimisticCopy(optimisticCopy);
     
     // Show immediate feedback
-    toast.loading(`Copying "${sourceResume.name}"...`, { id: `copy-${sourceResume.id}` });
+    toast.loading(`Копирование "${sourceResume.name}"...`, { id: `copy-${sourceResume.id}` });
     
     try {
       // Call server action in background
       await copyResume(sourceResume.id);
       
       // Success feedback - the real resume will appear via revalidation
-      toast.success(`"${sourceResume.name}" copied successfully`, { id: `copy-${sourceResume.id}` });
+      toast.success(`"${sourceResume.name}" успешно скопировано`, { id: `copy-${sourceResume.id}` });
     } catch (error) {
       // On error, the optimistic update will automatically rollback
       console.error('Failed to copy resume:', error);
-      toast.error(`Failed to copy "${sourceResume.name}". Please try again.`, { id: `copy-${sourceResume.id}` });
+      toast.error(`Не удалось скопировать "${sourceResume.name}". Попробуйте снова.`, { id: `copy-${sourceResume.id}` });
     } finally {
       // Remove from copying set
       setCopyingResumes(prev => {
@@ -236,7 +236,7 @@ export function ResumesSection({
             type === 'base' ? "text-purple-600" : "text-pink-600",
             "group-hover/new-resume:font-semibold"
           )}>
-            Create {type === 'base' ? 'Base' : 'Tailored'} Resume
+            Создать {type === 'base' ? 'базовое' : 'адаптированное'} резюме
           </span>
 
           <span className={cn(
@@ -245,7 +245,7 @@ export function ResumesSection({
             type === 'base' ? "text-purple-500" : "text-pink-500",
             "group-hover/new-resume:opacity-70"
           )}>
-            Click to start
+            Нажмите чтобы начать
           </span>
         </div>
       </button>
@@ -308,7 +308,7 @@ export function ResumesSection({
             "transition-all duration-500",
             "group-hover/limit:text-amber-700"
           )}>
-            {type === 'base' ? 'Base' : 'Tailored'} Limit Reached
+            Лимит {type === 'base' ? 'базовых' : 'адаптированных'} резюме достигнут
           </span>
           <span className={cn(
             "mt-2 text-xs",
@@ -317,7 +317,7 @@ export function ResumesSection({
             "transition-all duration-300",
             "group-hover/limit:text-amber-700/90"
           )}>
-            Upgrade to create more
+            Обновите план для создания новых
           </span>
         </div>
       </div>
@@ -358,7 +358,7 @@ export function ResumesSection({
                 <div className="absolute inset-0 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center z-10">
                   <div className="flex flex-col items-center gap-2">
                     <Loader2 className="h-5 w-5 animate-spin text-blue-600" />
-                    <span className="text-xs font-medium text-blue-600">Copying...</span>
+                    <span className="text-xs font-medium text-blue-600">Копирование...</span>
                   </div>
                 </div>
               </div>
@@ -450,17 +450,17 @@ export function ResumesSection({
                     </AlertDialogTrigger>
                     <AlertDialogContent>
                       <AlertDialogHeader>
-                        <AlertDialogTitle>Upgrade Required</AlertDialogTitle>
+                        <AlertDialogTitle>Требуется обновление плана</AlertDialogTitle>
                         <AlertDialogDescription>
-                          You&apos;ve reached the maximum number of {type} resumes allowed on the free plan. 
-                          Upgrade to Pro to create unlimited resumes and unlock additional features.
+                          Вы достигли максимального количества {type === 'base' ? 'базовых' : 'адаптированных'} резюме на бесплатном плане.
+                          Перейдите на Pro для создания неограниченного количества резюме.
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogCancel>Cancel</AlertDialogCancel>
+                        <AlertDialogCancel>Отмена</AlertDialogCancel>
                         <AlertDialogAction asChild>
                           <Link href="/subscription" className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white hover:from-teal-700 hover:to-cyan-700">
-                            Upgrade to Pro
+                            Перейти на Pro
                           </Link>
                         </AlertDialogAction>
                       </AlertDialogFooter>
@@ -472,13 +472,13 @@ export function ResumesSection({
           </div>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Delete Resume</AlertDialogTitle>
+              <AlertDialogTitle>Удалить резюме</AlertDialogTitle>
               <AlertDialogDescription>
-                Are you sure you want to delete &quot;{resume.name}&quot;? This action cannot be undone.
+                Вы уверены, что хотите удалить &quot;{resume.name}&quot;? Это действие нельзя отменить.
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel>Cancel</AlertDialogCancel>
+              <AlertDialogCancel>Отмена</AlertDialogCancel>
               <AlertDialogAction
                 onClick={() => {
                   startTransition(() => {
@@ -487,7 +487,7 @@ export function ResumesSection({
                 }}
                 className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
               >
-                Delete
+                Удалить
               </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
@@ -501,7 +501,7 @@ export function ResumesSection({
       <div className="flex flex-col gap-4 w-full">
         <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <h2 className={`text-2xl sm:text-3xl font-semibold tracking-tight bg-gradient-to-r ${config.gradient} bg-clip-text text-transparent`}>
-            {type === 'base' ? 'Base' : 'Tailored'} Resumes
+            {type === 'base' ? 'Базовые' : 'Адаптированные'} резюме
           </h2>
           <div className="flex items-center gap-2 mb-4">
             <ResumeSortControls 

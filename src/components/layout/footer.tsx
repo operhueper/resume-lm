@@ -23,7 +23,7 @@ export function Footer({ variant = 'fixed' }: FooterProps) {
             className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
           >
             <Mail className="h-4 w-4" />
-            <span>Contact Support</span>
+            <span>Поддержка</span>
           </Link>
           <div className="flex items-center gap-6">
             <Link

@@ -30,7 +30,7 @@ export function ResetPasswordForm() {
       const result = await resetPasswordForEmail(formData);
       
       if (!result.success) {
-        setFormState({ error: result.error || "Failed to send reset email" });
+        setFormState({ error: result.error || "Не удалось отправить письмо для сброса пароля" });
         return;
       }
       
@@ -38,7 +38,7 @@ export function ResetPasswordForm() {
       setFormState({ success: true });
     } catch (error: unknown) {
       console.error("Password reset error:", error);
-      setFormState({ error: "An unexpected error occurred" });
+      setFormState({ error: "Произошла непредвиденная ошибка" });
     } finally {
       setIsLoading(false);
     }
@@ -56,13 +56,13 @@ export function ResetPasswordForm() {
         <Alert className="bg-emerald-50/50 text-emerald-900 border-emerald-200/50">
           <CheckCircle2 className="h-4 w-4 text-emerald-500" />
           <AlertDescription>
-            Check your email for a password reset link.
+            Проверьте почту — там ссылка для сброса пароля.
           </AlertDescription>
         </Alert>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">Эл. почта</Label>
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground/50" />
               <Input
@@ -86,10 +86,10 @@ export function ResetPasswordForm() {
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sending reset link...
+                Отправка ссылки...
               </>
             ) : (
-              "Send Reset Link"
+              "Отправить ссылку"
             )}
           </Button>
 
@@ -98,7 +98,7 @@ export function ResetPasswordForm() {
               href="/"
               className="text-muted-foreground hover:text-violet-600 transition-colors"
             >
-              Back to login
+              Назад ко входу
             </Link>
           </div>
         </form>

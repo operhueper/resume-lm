@@ -23,10 +23,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://resumelm.com"),
   title: {
-    default: "ResumeLM - AI-Powered Resume Builder",
+    default: "ResumeLM - ИИ-конструктор резюме",
     template: "%s | ResumeLM"
   },
-  description: "Create tailored, ATS-optimized resumes powered by AI. Land your dream tech job with personalized resume optimization.",
+  description: "Создавайте персонализированные ATS-оптимизированные резюме с помощью ИИ. Найдите работу мечты с персональной оптимизацией резюме.",
   applicationName: "ResumeLM",
   keywords: ["resume builder", "AI resume", "ATS optimization", "tech jobs", "career tools", "job application"],
   authors: [{ name: "ResumeLM" }],
@@ -123,14 +123,14 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={inter.className}>
         <PostHogProvider>
           {isImpersonating && user && (
             <div className="bg-amber-500 text-white text-center text-sm py-2">
-              Impersonating&nbsp;<span className="font-semibold">{user.email ?? user.id}</span>.&nbsp;
+              Просмотр от имени&nbsp;<span className="font-semibold">{user.email ?? user.id}</span>.&nbsp;
               <Link href="/stop-impersonation" className="underline font-medium">
-                Stop impersonating
+                Прекратить просмотр
               </Link>
             </div>
           )}

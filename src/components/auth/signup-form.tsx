@@ -27,10 +27,10 @@ function SubmitButton() {
       {pending ? (
         <>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          Creating account...
+          Создание аккаунта...
         </>
       ) : (
-        "Create Account"
+        "Создать аккаунт"
       )}
     </Button>
   );
@@ -63,7 +63,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
       <Alert className="bg-emerald-50/50 text-emerald-900 border-emerald-200/50">
         <CheckCircle2 className="h-4 w-4 text-emerald-500" />
         <AlertDescription>
-          {state.message ?? "Account created successfully. Please check your email to confirm your account."}
+          {state.message ?? "Аккаунт успешно создан. Проверьте почту для подтверждения."}
         </AlertDescription>
       </Alert>
     );
@@ -73,7 +73,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
     <form action={formAction} className="space-y-4">
       <div className="space-y-2">
         <Label htmlFor="signup-name" className="text-sm font-medium">
-          Full Name
+          Полное имя
         </Label>
         <Input
           autoFocus
@@ -97,7 +97,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
 
       <div className="space-y-2">
         <Label htmlFor="signup-email" className="text-sm font-medium">
-          Email
+          Эл. почта
         </Label>
         <Input
           id="signup-email"
@@ -118,7 +118,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
 
       <div className="space-y-2">
         <Label htmlFor="signup-password" className="text-sm font-medium">
-          Password
+          Пароль
         </Label>
         <div className="relative">
           <Input
@@ -138,7 +138,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
             type="button"
             onClick={() => setShowPassword((prev) => !prev)}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
-            aria-label={showPassword ? "Hide password" : "Show password"}
+            aria-label={showPassword ? "Скрыть пароль" : "Показать пароль"}
           >
             {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
@@ -149,7 +149,7 @@ export function SignupForm({ onSuccess }: SignupFormProps) {
           </p>
         ) : (
           <p id="signup-password-hint" className="text-xs text-muted-foreground">
-            Use at least 6 characters, including one uppercase letter and one number.
+            Не менее 6 символов, включая одну заглавную букву и одну цифру.
           </p>
         )}
       </div>

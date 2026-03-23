@@ -24,10 +24,10 @@ function SubmitButton() {
       {pending ? (
         <>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          Signing in...
+          Вход...
         </>
       ) : (
-        "Sign In"
+        "Войти"
       )}
     </Button>
   );
@@ -44,7 +44,7 @@ export function LoginForm() {
     <form action={formAction} className="space-y-5">
       <div className="space-y-2">
         <Label htmlFor="login-email" className="text-sm font-medium">
-          Email
+          Эл. почта
         </Label>
         <Input
           autoFocus
@@ -67,13 +67,13 @@ export function LoginForm() {
       <div className="space-y-2">
         <div className="flex items-center justify-between">
           <Label htmlFor="login-password" className="text-sm font-medium">
-            Password
+            Пароль
           </Label>
           <Link
             href="/auth/reset-password"
             className="text-sm text-muted-foreground hover:text-violet-600 transition-colors"
           >
-            Forgot password?
+            Забыли пароль?
           </Link>
         </div>
         <div className="relative">
@@ -93,7 +93,7 @@ export function LoginForm() {
             type="button"
             onClick={() => setShowPassword((prev) => !prev)}
             className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
-            aria-label={showPassword ? "Hide password" : "Show password"}
+            aria-label={showPassword ? "Скрыть пароль" : "Показать пароль"}
           >
             {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
           </button>
